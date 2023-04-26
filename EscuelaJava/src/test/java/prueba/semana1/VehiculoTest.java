@@ -11,6 +11,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import prueba.semana1.model.Coche;
+
 public class VehiculoTest {
 	private static Coche coche;
 

@@ -1,10 +1,12 @@
-package prueba.semana1;
+package prueba.semana1.model;
 
 import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+
+import prueba.semana1.exceptions.BusinessException;
 
 /**
  * Moto.java Clase para el objecto Moto

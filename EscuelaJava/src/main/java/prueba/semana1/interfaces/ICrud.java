@@ -1,6 +1,9 @@
-package prueba.semana1;
+package prueba.semana1.interfaces;
 
 import java.util.List;
+
+import prueba.semana1.exceptions.BusinessException;
+import prueba.semana1.model.Vehiculo;
 
 public interface ICrud {
 

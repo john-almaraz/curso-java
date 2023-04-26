@@ -1,4 +1,4 @@
-package prueba.semana1;
+package prueba.semana1.model;
 
 import static javax.persistence.GenerationType.IDENTITY;
 
@@ -8,13 +8,18 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
 import javax.persistence.Table;
+import javax.persistence.InheritanceType;
+import prueba.semana1.interfaces.Conducible;
+import prueba.semana1.interfaces.ICrud;
 
 /**
  * Vehiculo.java Clase para el objecto Vehiculo
  */
 @Entity
 @Table(name="vehiculo")
+@Inheritance(strategy = InheritanceType.JOINED)
 public abstract class Vehiculo implements Conducible, ICrud {
 	@Id
 	@GeneratedValue(strategy = IDENTITY)

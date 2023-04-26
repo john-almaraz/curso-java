@@ -1,4 +1,4 @@
-package prueba.semana1;
+package prueba.semana1.controller;
 
 import java.util.Arrays;
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.Scanner;
  * Se encarga de la entrada de datos por teclado.
  */
 public class InputHandler {
-    private Scanner scanner;
+	private Scanner scanner;
 
     public InputHandler() {
         this.scanner = new Scanner(System.in);
@@ -45,6 +45,13 @@ public class InputHandler {
         return getUserInput("Por favor, seleccione una acción:", options);
     }
 
+    /**
+     * Maneja la respuesta del usuario
+     * 
+     * @param message mensaje informativo para que el usuario selecione una opcion
+     * @param options lista de acciones disponibles
+     * @return int la opcion seleccionada por el usuario
+     */
     private int getUserInput(String message, List<String> options) {
 
         System.out.println(message);
@@ -72,7 +79,7 @@ public class InputHandler {
     /**
      * Metodo para pedir los metros al usuario.
      *
-     * @return Integer metros
+     * @return Integer valor numerico que sepresenta los metros
      */
     public Integer getMetros() {
 
